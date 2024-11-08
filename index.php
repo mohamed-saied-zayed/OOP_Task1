@@ -40,23 +40,24 @@ $laptop->description = "description for dell laptop";
     <div class="card-body">
       <h5 class="card-title"><?= $book->name;?></h5>
       <p class="card-text"><?= $book->description; ?></p>
-      <p class="card-text"><small class="text-muted"><?= $book->brand;?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Price after discount =". $book->priceAfterDiscount(10) . "$";?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Final price after adding tax = ".$book->getFinalPrice() . "$";?></small></p>
     </div>
   </div>
   <div class="card">
     <img class="card-img-top" src="uploads/<?= $tshirt->image;?>" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title"><?= $tshirt->name;?></h5>
-      <p class="card-text"><?= $tshirt->description; ?></p>
-      <p class="card-text"><small class="text-muted"><?= $tshirt->brand;?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Price after discount =". $tshirt->priceAfterDiscount(10) . "$";?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Final price after adding tax = ".$tshirt->getFinalPrice() . "$";?></small></p>
     </div>
   </div>
   <div class="card">
     <img class="card-img-top" src="uploads/<?= $laptop->image;?>" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title"><?= $laptop->name;?></h5>
-      <p class="card-text"><?= $laptop->description; ?></p>
-      <p class="card-text"><small class="text-muted"><?= $laptop->brand;?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Price after discount =". $laptop->priceAfterDiscount(10) . "$";?></small></p>
+      <p class="card-text"><small class="text-muted"><?= "Final price after adding tax = ".$laptop->getFinalPrice() . "$";?></small></p>
     </div>
   </div>
 </div>
